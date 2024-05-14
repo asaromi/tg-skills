@@ -3,6 +3,6 @@ export const createUserRules = {
 	email: "required|string|email",
 	phoneNumber: "required|numeric",
 	jobTitle: "string",
-	gender: "in:male,female",
+	gender: "in:MALE,FEMALE",
 	address: "string"
 }
