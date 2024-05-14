@@ -1,8 +1,8 @@
 ### [GET] Users
-GET http://api.talent-growth.host/api/users
+GET http://localhost:3000/api/users
 
 ### [POST] Create/Register User
-POST http://api.talent-growth.host/api/users
+POST http://localhost:3000/api/users
 Content-Type: application/json
 
-< ./prisma/user.success.json
+< ./user.error.name.json
