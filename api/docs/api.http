@@ -1,2 +1,8 @@
 ### [GET] Users
 GET http://api.talent-growth.host/api/users
+
+### [POST] Create/Register User
+POST http://api.talent-growth.host/api/users
+Content-Type: application/json
+
+< ./prisma/user.success.json

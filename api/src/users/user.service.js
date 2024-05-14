@@ -1,4 +1,5 @@
 import { User } from '../utils/db.prisma.js'
+import { generateId } from '../utils/helper.js'
 
 export const getAllUsers = async ({ page, limit, search }) => {
 	const skip = page && limit ? (page - 1) * limit : undefined
@@ -60,4 +61,10 @@ export const getPaginatedUsers = async ({ page = '1', limit = '10', search }) =>
 	])
 
 	return { count, users, page: _page, limit: _limit }
+}
+
+export const createUser = async (data) => {
+	data.id = generateId()
+
+	return User.create({ data })
 }
