@@ -1,9 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { useRouteContext } from '../hooks/contexts/RouteContext.jsx'
-import Button from '../components/Button.jsx'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import PropTypes from 'prop-types'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Button } from '../components'
+import useRouteContext from '../hooks/useRouteContext'
 
 function User() {
 	const { navigate } = useRouteContext()
@@ -28,6 +28,6 @@ function User() {
 	)
 }
 
-User.propTypes = {}
+// User.propTypes = {}
 
 export default User

@@ -14,4 +14,8 @@ const Input = ({ ...props }) => {
 	)
 }
 
+Input.propTypes = {
+	type: PropTypes.string,
+}
+
 export default Input

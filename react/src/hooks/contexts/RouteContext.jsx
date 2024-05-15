@@ -1,11 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import Home from '../../pages/Home'
-
-const RouteContext = createContext({
-	path: null,
-	navigate: () => {}
-})
+import { RouteContext } from '../useRouteContext'
 
 const RouteContextProvider = ({ routes = [] }) => {
 	const [path, setPath] = useState(window.location.pathname)
@@ -40,5 +36,4 @@ RouteContextProvider.propTypes = {
 	routes: PropTypes.array,
 }
 
-export const useRouteContext = () => useContext(RouteContext)
 export default RouteContextProvider

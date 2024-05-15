@@ -1,10 +1,9 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-import PropTypes from 'prop-types'
-import { useRouteContext } from '../hooks/contexts/RouteContext.jsx'
-import Input from '../components/Input.jsx'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import PropTypes from 'prop-types'
 import { Button } from '../components'
+import useRouteContext from '../hooks/useRouteContext'
 
 function Home() {
 	const { navigate } = useRouteContext()
@@ -28,6 +27,6 @@ function Home() {
 	)
 }
 
-Home.propTypes = {}
+// Home.propTypes = {}
 
 export default Home
