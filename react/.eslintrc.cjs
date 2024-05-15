@@ -19,5 +19,6 @@ module.exports = {
     ],
     'no-unused-vars': ['error', { varsIgnorePattern: 'React|_' }],
     'react-hooks/exhaustive-deps': 'off',
+    'react/no-children-prop': 'warn',
   },
 }
