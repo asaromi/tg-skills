@@ -1,5 +1,5 @@
 import React from 'react'
-import RouteContextProvider, { useRouteContext } from '../hooks/contexts/RouteContext.jsx'
+import RouteContextProvider from '../hooks/contexts/RouteContext.jsx'
 import routers from '../utils/router.js'
 
 function App() {
